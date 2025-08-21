@@ -2,6 +2,11 @@
 
 This repository contains examples for learning Google's Agent Development Kit (ADK), a powerful framework for building LLM-powered agents.
 
+## This repository was provided by bhancockio.
+https://github.com/bhancockio/agent-development-kit-crash-course.git
+
+Out of the 12 examples, I'm focusing at the last 8 examples (5-12) and I'm skipping the first 4 examples because in course number 5 Brandon explains how to use the ADK and agent values (sessions, id, state, etc.) to create a web application.
+
 ## Getting Started
 
 ### Setup Environment
@@ -37,12 +42,13 @@ Once set up, this single environment will work for all examples in the repositor
 
 Each example folder contains a `.env.example` file. For each project you want to run:
 
-1. Navigate to the example folder
+1. Open the `.env.example` file
 2. Rename `.env.example` to `.env` 
 3. Open the `.env` file and replace the placeholder with your API key:
    ```
    GOOGLE_API_KEY=your_api_key_here
    ```
+Remember to put the .env file in the root directory of the project which is the folder with the number in front.
 
 You'll need to repeat this for each example project you want to run.
 

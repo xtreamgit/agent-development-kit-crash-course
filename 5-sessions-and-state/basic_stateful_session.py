@@ -13,18 +13,26 @@ load_dotenv()
 session_service_stateful = InMemorySessionService()
 
 initial_state = {
-    "user_name": "Brandon Hancock",
+    "user_name": "Hector DeJesus",
     "user_preferences": """
-        I like to play Pickleball, Disc Golf, and Tennis.
-        My favorite food is Mexican.
-        My favorite TV show is Game of Thrones.
-        Loves it when people like and subscribe to his YouTube channel.
+        I enjoy building AI-powered cloud-native applications.
+        My favorite cuisine is Puerto Rican food.
+        I like exploring trance, techno, and rave music events.
+        I follow the latest trends in Google Cloud and AI/ML.
+        I like producing and investing in exclusive clubs and discotheques.
+        My favorite tool for coding is VSCode.
+        I love working on Terraform and Infrastructure as Code projects.
+        I enjoy teaching complex cloud and AI concepts in simple ways.
+        I like playing with new SaaS ideas to generate online income.
+        My favorite TV shows are sci-fi and fantasy, especially ones with deep storylines.
+        I enjoy fitness through activities like intermittent fasting and exploring health hacks.
+        I appreciate when people support my entrepreneurial projects like Develom.com.    
     """,
 }
 
 # Create a NEW session
-APP_NAME = "Brandon Bot"
-USER_ID = "brandon_hancock"
+APP_NAME = "Hector's Bot"
+USER_ID = "hector_dejesus"
 SESSION_ID = str(uuid.uuid4())
 stateful_session = session_service_stateful.create_session(
     app_name=APP_NAME,
@@ -42,7 +50,7 @@ runner = Runner(
 )
 
 new_message = types.Content(
-    role="user", parts=[types.Part(text="What is Brandon's favorite TV show?")]
+    role="user", parts=[types.Part(text="What is Hector's favorite food?")]
 )
 
 for event in runner.run(
